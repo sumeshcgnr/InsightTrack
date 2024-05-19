@@ -1,0 +1,32 @@
+<div class="mainContentBlock">
+    <div class="disContentBlock" #msgcards>
+        <ng-container *ngFor="let msg of messages">
+            <mat-card class="messageCard">
+                <mat-card-header>
+                    <div mat-card-avatar class="card-cover-image">
+                        <img [src]="thoughtIcon" class="card-cover-image" *ngIf="msg.Type == 'thought'"/>
+                        <img [src]="questionIcon" class="card-cover-image" *ngIf="msg.Type == 'question'"/>
+                        <img [src]="insightIcon" class="card-cover-image" *ngIf="msg.Type == 'insight'"/>
+                        <img [src]="reciprocalIcon" class="card-cover-image" *ngIf="msg.Type == 'reciprocal'"/>                        
+                    </div>
+                    
+                    <mat-card-subtitle *ngIf="msg.Anonymous != true">{{msg.UserName}}</mat-card-subtitle>
+                    <mat-card-subtitle *ngIf="msg.Anonymous == true">Anonymous</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>{{msg.Text}}</mat-card-content>
+                <mat-card-footer style="text-align: right; margin-right: 0.5%">
+                    <mat-card-subtitle><i>{{msg.Created.toDate()| date:'yyyy/MM/dd h:mm:ss a'}}</i></mat-card-subtitle>
+                </mat-card-footer>
+            </mat-card>
+        </ng-container>
+    </div>
+
+    <button mat-raised-button class="mat-raised-button" (click)="openDialog()">Post</button>
+
+    <div class="abContentBlock">
+        <app-abstract></app-abstract>
+    </div>
+    <div class="rankContentBlock">
+        <app-rank></app-rank>
+    </div>
+</div>

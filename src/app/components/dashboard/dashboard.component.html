@@ -1,0 +1,43 @@
+<div class="contentBlock">
+    <!--mat-form-field class="searchFormField">
+        <button mat-button matPrefix mat-icon-button>
+            <mat-icon>search</mat-icon>
+        </button>
+        <mat-label>Search Topic</mat-label>
+        <input matInput type="text" matTooltip="Search by topic (case sensitive)" [(ngModel)]="searchInput"
+            (change)="updateSearchFilter()">
+    </mat-form-field-->
+
+    <mat-dialog-actions align="end" class="searchFormField" *ngIf="adminUser">
+        <button class="mat-raised-button" (click)="onCreate()" cdkFocusInitial>New Topic</button>         
+    </mat-dialog-actions>
+
+    <div class="cardList" *ngIf="topicList.length != 0">
+        <mat-card class="Card" *ngFor="let topic of topicList" (click)="showDiscussion(topic.Id)">
+
+
+            <div class="parent-flex-row" style="margin-top: 5%;">
+                <label class="companyTitle clickable" style="width: 80%;">
+                    {{topic.ShortName}}
+                </label>
+            </div>
+            <br>
+            <div class="parent-flex-row" style="margin-bottom: 5%;">
+                <label class="cardInfo clickable" style="width: 90%;word-wrap: break-word;">
+                    Mod: {{topic.Moderator}} <br>
+                    Spk: {{topic.Speaker}} <br>
+                    Venue : {{topic.Venue}} <br>                
+
+                </label>
+            </div>
+
+
+            <!--div class="parent-flex-row" style="margin-top: 10%;">
+                <label class="shortDesc clickable" style="width: 95%;">
+                   {{topic.ShortDesc}}
+                </label>
+            </div-->
+        </mat-card>
+
+    </div>
+</div>

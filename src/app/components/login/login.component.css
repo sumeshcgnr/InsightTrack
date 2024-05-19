@@ -1,0 +1,110 @@
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+} 
+
+.matCardBlocks{
+  margin: auto!important;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+  box-shadow: 0px 3px 10px #00000029;
+  opacity: 1;
+  border-radius: 1px !important;
+}
+
+.mat-card-subtitle, .mat-card-content  {
+  font-size: 20px!important;
+  padding-top: 0px!important;
+}
+
+#googleBtn{
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: 32%;
+  height: 7vh;
+  border: 0px;
+  padding: 0px;
+  margin-top: 2%;
+  
+}
+
+.mainLoginScreen{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 100%;
+}
+
+.companyLogoBlock{
+width: 38%;
+height: 58%;
+}
+
+.Logo{
+height: 30vh;
+margin-left: 1%;
+margin-top: 1%;
+}
+
+.LogoBlock{
+width: 70%;height: 60%; align-items: center;justify-content: center;display: flex;
+}
+
+
+.loginBlock{
+margin-left: 0.3%;
+width: 38%;
+height: 58%;
+
+}
+
+.loginContent{
+width:100%;height: 100%; display:flex;flex-direction: column;align-items: center;justify-content: center;
+}
+
+.loginText{
+width: 65%;
+font-size: 0.9vw;
+font-family: 'Gotham-Light';
+color:rgb(80, 77, 77);
+opacity: 1;
+text-align: center;
+padding-bottom: 0.5vw;
+}
+
+.mat-raised-button {
+  max-width: 150px!important;
+}
+
+.background_blur{
+background-image: url('../../../assets/images/blur_image.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+z-index: -1;
+/* background: rgba(190, 190, 190, 1) 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+border: 1px solid rgba(190, 190, 190, 0.44);
+opacity: 1; */
+filter: blur(12px);
+-webkit-filter: blur(250px);
+margin-top: 3%;
+margin-left: 3%;
+height: 92%;
+width: 92%;
+}
+
+.blurOpacityBlock{
+z-index: 999  ;
+width: 40%!important;
+height: 58%!important;
+position: absolute;
+top: 50%;
+/* left: 50%; */
+transform: translate(0%, -50%);
+background: rgba(190, 190, 190, 0.1) 0% 0% no-repeat padding-box;
+}

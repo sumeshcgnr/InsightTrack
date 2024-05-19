@@ -1,0 +1,116 @@
+.mainContentBlock {
+  margin-top: 0.4%;
+  margin-bottom: 0.4%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  width: 98%;
+  height: 85%;
+  border: 1px solid #F1F1F3;
+  border-radius: 4px;
+  background-color: #F5F6F7FA;
+}
+
+.card-cover-image {  
+  /*background-size: cover;*/
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.disContentBlock {
+  margin-top: 0%;
+  margin-bottom: 0.5%;
+  margin-left: 1.5%;
+  margin-right: 0.5%;
+  width: 60%;
+  height: 92.5%;
+  border: 5px solid #F1F1F3;
+  border-radius: 1px;
+  background-color: #F5F6F7FA;
+  position: relative;
+  overflow: scroll;
+}
+
+.mat-raised-button {
+  padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 25%;
+  min-width: 88px;  
+  font-size: 19px;
+  text-align: center;
+  text-decoration:none;
+  border: 5px;
+  border-radius: 8px!important; 
+  outline: none;
+  color: #f0fff3;
+  background-color: #3f51b5;
+  height: 4%;
+}
+
+.mat-raised-button:hover {
+  background-color: rgba(94, 92, 92, 0.2);
+}
+
+.abContentBlock {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.5%;
+  width: 36.5%;
+  height: 56%;
+  border: 5px solid #F1F1F3;
+  border-radius: 1px;
+  background-color: #F5F6F7FA;
+  position: absolute;
+  top: 11.5%;
+  right: 1%; 
+}
+
+
+.rankContentBlock {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 0.5%;
+  width: 36.5%;
+  height: 27%;
+  border: 5px solid #F1F1F3;
+  border-radius: 1px;
+  background-color: #F5F6F7FA;
+  position: absolute;  
+  top: 70%;
+  right: 1%;
+  overflow: auto;
+}
+
+.messageCard {
+  width: 95%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 1%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 1px #00000029;
+  opacity: 1;
+  float: left;
+  background-color: rgb(237, 237, 243);
+  cursor: pointer;
+
+}
+
+.messageCard:hover {
+  width: 95%;
+  height: auto;
+  margin-top: 1%;
+  margin-left: 1%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 1px #00000029;
+  float: left;
+  background-color: rgb(157, 157, 160);
+  opacity: 0.9;
+  cursor: pointer;
+ 
+}
+
+
+.inputBox {
+  width: 90%;
+}

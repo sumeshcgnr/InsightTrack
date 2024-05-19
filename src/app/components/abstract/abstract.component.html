@@ -1,0 +1,9 @@
+<div class="absContentBlock" *ngIf="currentTopic != undefined">
+    <h2 style="color: grey;">{{currentTopic.Title}}</h2>
+    <h2 style="color: navy;"> Moderated by {{currentTopic.Moderator}}</h2>
+    <h2 style="color: darkolivegreen;">Speaker: {{currentTopic.Speaker}}</h2>
+    <h3 style="color: grey;">Date: {{currentTopic.Date.toDate()| date:'yyyy/MM/dd h:mm:ss a'}} </h3>
+    <h3 style="color: grey;">Venue: {{currentTopic.Venue}}</h3>
+    <h4 style="color: grey;"> {{currentTopic.Abstract}}</h4>
+
+</div>

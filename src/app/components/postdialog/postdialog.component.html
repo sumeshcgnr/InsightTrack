@@ -1,0 +1,20 @@
+<h3 mat-dialog-title>Post your message</h3>
+<mat-dialog-content>
+    <mat-button-toggle-group [(ngModel)]="messageType">
+        <mat-button-toggle value="insight"><img [src]="[insightIcon]" style="width: 30%;" />Insight</mat-button-toggle>
+        <mat-button-toggle value="question"><img [src]="[questionIcon]"
+                style="width: 30%;" />Question</mat-button-toggle>
+        <mat-button-toggle value="thought"><img [src]="[thoughtIcon]" style="width: 30%;" />Thought</mat-button-toggle>
+        <mat-button-toggle value="reciprocal"><img [src]="[reciprocalIcon]" style="width: 30%;" />Reciprocity</mat-button-toggle>
+    </mat-button-toggle-group>
+    <br><br>
+    <mat-form-field class="inputBox" >
+        <mat-label>Post your message</mat-label>
+        <textarea matInput placeholder="Write your IQT here..." #textArea></textarea>
+    </mat-form-field>
+    <mat-slide-toggle align="end" [(ngModel)]="anonymous">Anonymous</mat-slide-toggle>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button class="mat-raised-button" (click)="onPost(textArea.value)" cdkFocusInitial>Post</button> &nbsp;&nbsp;&nbsp;
+    <button class="mat-raised-button" mat-button mat-dialog-close>Cancel</button> &nbsp;&nbsp;&nbsp;    
+</mat-dialog-actions>

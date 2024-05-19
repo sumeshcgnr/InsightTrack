@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+    border: 0px;
+    border-radius: 0px;    
+    box-shadow: none;
+    background: bottom;
+  }
+
+  tr {
+    height: 20px;
+  }

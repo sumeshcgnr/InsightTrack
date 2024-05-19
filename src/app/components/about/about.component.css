@@ -1,0 +1,13 @@
+.Logo {
+    height: 50vh;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.LogoBlock {
+    width: 70%;
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

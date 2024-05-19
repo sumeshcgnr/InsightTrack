@@ -1,0 +1,26 @@
+<div class="appBody">
+    <mat-toolbar id="appBar">
+        <img src="../../../../assets/images/real-login-logo.svg"  alt="" class="appIcon" (click)="navigateToHome()">
+        <a routerLink="dashboard" routerLinkActive="active" *ngIf="user.verified">Dashboard</a>
+        <a routerLink="about" routerLinkActive="active" *ngIf="user.verified">About</a>
+
+
+        <div class="accountsBlock">
+            <img [src]=user.photoURL class="accountImage" (click)=select.open()>
+            <mat-select #select class="langSelect" style="width:150%;">
+                <mat-option value="option" (click)="doLogout()" style="font-size: 1vw;"><img
+                        src="../../../assets/images/logout.svg" class="accountIcons">Logout</mat-option>
+            </mat-select>
+
+            <div
+                style="height:100%;margin-left: 0.5vw;display: flex ;flex-direction: column;justify-content: center;align-items: flex-start;">
+                <label class="userName"
+                    [style]="(user.displayName)?'':'height:auto;margin-top:-6%'">{{user.displayName}}</label>
+                <label class="userCompany">{{user.email}}</label>
+
+            </div>
+
+        </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>

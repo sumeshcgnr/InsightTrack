@@ -1,0 +1,213 @@
+.contentBlock{
+  margin-top: 0.5%; 
+  margin-bottom: 1%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  width: 85%;
+  height: 86.5%;
+  border: 1px solid #F1F1F3;
+  border-radius: 4px;
+  background-color: #F5F6F7FA;
+  
+}
+
+.cardList{
+  height: 85%;
+  width: 100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+.addCards{
+  height: 9%;
+  width: 100%;
+  border: 1px solid #F9F9FB;
+}
+
+mat-icon{
+  font-size: 1.7vw;
+  transform: scale(1.4);
+  color: #575759;
+}
+
+.addCardsBtn{
+  /* float: right; */
+  /* text-align: center;
+  margin-right: 4%;
+  vertical-align: middle; */
+  height: 2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.moreIcon {
+  float: right;
+  margin-right: 4%;
+  vertical-align: middle;
+  color: #5283AD;
+  font-size: 0.8vw;
+  font-family: 'Gotham-Book';  
+}
+
+.expandIcon{
+  vertical-align: middle;
+  color: #5283AD;
+  transform: scale(1);
+}
+
+/* .example-card {
+  width: 14%;
+  height: 28vh;
+  margin-top: 4%;
+  margin-left: 5%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 1px #00000029;
+  opacity: 1;
+  float: left;
+  background-color: #575759;
+} */
+
+.cardHeader{
+  height: 50%;
+  width: 100%;
+  background-color:  #575759;
+  color: white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.cardContent{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+mat-card-header{
+  background-color: #575759;
+  height: 55%;
+}
+
+.mat-card {
+  padding: 0px;
+}
+
+.mat-mdc-card {
+  --mdc-elevated-card-container-color: rgb(105, 104, 104)!important;
+}
+
+
+.mat-card-header-text {
+margin: 0 0px;
+} 
+
+.companyTitle , .cardInfo{
+/* padding-top: 5%; */
+padding-left: 5%;
+color: white;
+font-family: 'Gotham-Book';
+}
+
+.shortDesc , .cardInfo{
+  /* padding-top: 5%; */
+  padding-left: 5%;
+  color: white;
+  font-family: 'Gotham-Book';
+  font-size: small;
+  }
+
+p{
+margin: 0px!important;
+}
+
+.status{
+font-size: 1.2vw;
+font-family: 'Gotham-Book';
+float: right;
+margin-right: 7%;
+color: #FF8200;
+font-style: italic; 
+}
+
+.searchFormField{
+width: 12vw;
+float: right;
+margin-right: 2%;
+height: 10%;
+font-family: 'Gotham-Book';
+font-size: 0.9vw;
+color: rgba(0, 0, 0, 60%);
+opacity: 0.6;
+
+}
+
+.parent-flex-row{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center
+}
+
+::ng-deep .langSelect div.mat-select-arrow-wrapper {
+display: none;
+}
+
+::ng-deep .langSelect.mat-select {
+display: inline;
+}
+
+mat-option , .dropdownOptions{
+font-family: 'Gotham-Book'!important;
+font-size: 0.6vw!important;
+padding: 0 0.2vw;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+/* background-color: #2980B9; */
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+padding-left: 5%;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+right:15%;
+border-radius: 0.1vw;
+background-color: #f1f1f1;
+min-width: 7vw;
+overflow: hidden;
+background: rgba(245, 246, 247, 0.98) 0% 0% no-repeat padding-box;
+/* border: 1px solid rgba(112, 112, 112, 1); */
+opacity: 1;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgba(49, 49, 51, 1);
+padding: 0.2vw 0.2vw;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+a.disabled {
+cursor: not-allowed;
+text-decoration: dashed;
+pointer-events: none;
+}
+
+.StatusIcon{
+height: 1.5vw;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+
